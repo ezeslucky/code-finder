@@ -78,6 +78,7 @@ import {
     name: text("name").notNull(),
     description: text("description"),
     tags: text("tags").notNull(),
+    
     githubRepo: text("githubRepo"),
   });
   
