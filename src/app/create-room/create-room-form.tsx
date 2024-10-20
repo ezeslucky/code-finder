@@ -19,7 +19,7 @@ import { createRoomAction } from './actions'
 import { useRouter } from 'next/navigation'
  
 const formSchema = z.object({
-    name: z.string().min(1).max(100),
+    name: z.string().min(0).max(100),
   description: z.string().min(1).max(550),
   githubRepo:z.string().min(1).max(50),
   
