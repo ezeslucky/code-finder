@@ -9,6 +9,7 @@ export async function generateTokenAction() {
   if (!session) {
     throw new Error("No session found");
   }
+  
 
   const api_key = process.env.NEXT_PUBLIC_GET_STREAM_API_KEY!;
   const api_secret = process.env.GET_STREAM_SECRET_KEY!;

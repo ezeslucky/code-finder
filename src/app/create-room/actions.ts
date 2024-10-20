@@ -17,6 +17,7 @@ export async function createRoomAction(roomData: Omit<Room, "id" | "userId">) {
   const room = await createRoom(roomData, session.user.id);
 
   revalidatePath("/browse");
+  
 
   return room;
 }
